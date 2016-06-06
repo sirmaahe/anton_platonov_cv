@@ -11,5 +11,9 @@ def index():
 def cookies():
     return render_template('cookies.html')
 
+@app.route('/zeynalov/cookies', methods=['GET'])
+def zeynalov_cookies():
+    return render_template('zeynalov/cookies.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
